@@ -4,6 +4,7 @@ var distance;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+    
 
  
   gui = new Gui();
@@ -70,6 +71,11 @@ function Gui() {
   this.color = '#FFB6C1';
   this.bColor = '#fed8b1';
 
+}
+
+function mouseDragged() {
+  ellipse(mouseX, mouseY, 50, 50); 
+  return false;
 }
 
 
